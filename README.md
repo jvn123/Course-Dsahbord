@@ -2,6 +2,12 @@
 
 SwiftUI learning app by **Jeevan Rawat**. Open `Dashboard.xcodeproj`, choose the `ProductApp` scheme, and run on an iOS simulator (deployment target iOS 26.5). Demo login accepts any valid email and a password of 6+ characters. `error@example.com` or password `wrong` simulates a login failure.
 
+## Screenshots
+
+| Loading courses | Empty course state |
+|---|---|
+| ![Dashboard loading courses](screenshots/dashboard-loading.png) | ![Dashboard empty course state](screenshots/dashboard-empty.png) |
+
 ## 1. Architecture
 
 I chose MVVM because it keeps SwiftUI views focused on presentation while observable view models own screen state and user actions. `AppNavigator` centralizes typed navigation. `CourseRepository` coordinates API and cache protocols, so UI code does not depend on networking or storage details. This follows single responsibility and dependency inversion, and the protocol boundaries make components replaceable. Async work uses Swift concurrency; the repository and JSON cache are actors.
