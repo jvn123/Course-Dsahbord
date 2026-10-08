@@ -1,8 +1,15 @@
+/Users/jee/.rvm/scripts/rvm:29: operation not permitted: ps
 # Dashboard — Learning Dashboard
 
 SwiftUI learning app by **Jeevan Rawat**. Open `Dashboard.xcodeproj`, choose the `ProductApp` scheme, and run on an iOS simulator (deployment target iOS 26.5). Demo login accepts any valid email and a password of 6+ characters. `error@example.com` or password `wrong` simulates a login failure.
 
 ## Screenshots
+
+[Watch the compressed 540p demo video](media/dashboard-demo-540p.mp4)
+
+| Login | Course list | Course details |
+|---|---|---|
+| ![Login screen](screenshots/login.png) | ![Course list](screenshots/course-list.png) | ![Course details](screenshots/course-details.png) |
 
 | Loading courses | Empty course state |
 |---|---|
